@@ -105,7 +105,7 @@ func (b *Bill) makeHeader() func() {
 		b.darkText()
 		b.text(20, 0, "Invoice #:")
 		b.lightText()
-		b.text(20, 0, billTime.EndOfMonth().Format("Jan22006"))
+		b.text(20, 0, "11") // TODO: Make this configurable
 
 		// Biller Name, Address
 		b.pdf.SetXY(8, 40)
