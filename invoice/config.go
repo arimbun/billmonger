@@ -46,20 +46,22 @@ type BillToDetails struct {
 }
 
 type BillableItem struct {
-	Quantity    float64
+	Period      string
 	Description string
+	Quantity    int
 	UnitPrice   float64 `yaml:"unit_price"`
 	Currency    string
 }
 
 func (b *BillableItem) Total() float64 {
-	return b.UnitPrice * b.Quantity
+	return b.UnitPrice * float64(b.Quantity)
 }
 
 func (b *BillableItem) Strings() []string {
 	return []string{
-		strconv.FormatFloat(b.Quantity, 'f', 2, 64),
+		b.Period,
 		b.Description,
+		strconv.Itoa(b.Quantity),
 		b.Currency + " " + niceFloatStr(b.UnitPrice),
 		b.Currency + " " + niceFloatStr(b.Total()),
 	}

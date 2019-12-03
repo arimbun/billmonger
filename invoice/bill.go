@@ -147,8 +147,8 @@ func (b *Bill) RenderToFile() error {
 
 	b.drawBillTable(headers, b.config.Bill.Strings())
 
-	headers = []string{"# Days", "Description", "Unit Price", "Line Total"}
-	widths := []float64{49, 92.5, 25, 25}
+	headers = []string{"Period", "Description", "# Days", "Unit Price", "Line Total"}
+	widths := []float64{40, 68.5, 25, 25, 25}
 
 	b.drawBillablesTable(headers, b.config.Billables, b.config.Tax, widths)
 	b.drawBankDetails()
