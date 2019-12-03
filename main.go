@@ -4,8 +4,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/jinzhu/now"
 	"github.com/arimbun/billmonger/invoice"
+	"github.com/jinzhu/now"
 	"gopkg.in/alecthomas/kingpin.v2"
 	"gopkg.in/relistan/rubberneck.v1"
 )

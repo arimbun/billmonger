@@ -38,7 +38,7 @@
 
 [[projects]]
   digest = "1:a69740cfaaa9ace974b3222884f27bf35c4e68f5013f81ec5a795cbf0df16910"
-  name = "github.com/relistan/billmonger"
+  name = "github.com/arimbun/billmonger"
   packages = ["invoice"]
   pruneopts = "UT"
   revision = "a4026c61f391fac623edc160f5b1069c08bf4d8c"
@@ -95,7 +95,7 @@
   input-imports = [
     "github.com/jinzhu/now",
     "github.com/jung-kurt/gofpdf",
-    "github.com/relistan/billmonger/invoice",
+    "github.com/arimbun/billmonger/invoice",
     "golang.org/x/text/language",
     "golang.org/x/text/message",
     "gopkg.in/alecthomas/kingpin.v2",
