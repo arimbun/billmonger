@@ -305,8 +305,8 @@ func (b *Bill) drawBankDetails() {
 	b.pdf.Ln(5)
 	b.pdf.SetFont(b.config.Business.SerifFont, "", 8)
 	headers := []string{
-		"Pay By", "Bank Name", "Address", "Account Type (checking/Savings)",
-		"IBAN (international)", "Sort Code (international)", "SWIFT/BIC (international)",
+		"Pay By", "Name", "Address", "Account Type (checking/Savings)",
+		"IBAN (international)", "BSB", "Account #",
 	}
 
 	b.pdf.SetDrawColor(64, 64, 64)
