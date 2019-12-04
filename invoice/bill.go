@@ -143,9 +143,10 @@ func (b *Bill) makeFooter() func() {
 func (b *Bill) RenderToFile() error {
 	b.drawBillTo()
 
-	headers := []string{"Department", "Currency", "Payment Terms", "Due Date"}
-
-	b.drawBillTable(headers, b.config.Bill.Strings())
+	var headers []string
+	// headers := []string{"Department", "Currency", "Payment Terms", "Due Date"}
+	//
+	// b.drawBillTable(headers, b.config.Bill.Strings())
 
 	headers = []string{"Period", "Description", "# Days", "Unit Price", "Line Total"}
 	widths := []float64{40, 68.5, 25, 25, 25}
