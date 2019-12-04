@@ -174,9 +174,9 @@ func (b *Bill) drawBillTo() {
 	b.pdf.Ln(10)
 
 	b.text(0, 0, "To: ")
-	b.pdf.SetX(20)
-	b.text(0, 0, b.config.BillTo.Email)
-	b.pdf.Ln(5)
+	// b.pdf.SetX(20)
+	// b.text(0, 0, b.config.BillTo.Email)
+	// b.pdf.Ln(5)
 	b.pdf.SetX(20)
 	b.text(0, 0, b.config.BillTo.Name)
 	b.pdf.Ln(5)
