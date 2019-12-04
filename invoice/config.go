@@ -15,12 +15,13 @@ import (
 )
 
 type BusinessDetails struct {
-	Name      string `yaml:"name"`
-	Person    string `yaml:"person"`
-	Address   string `yaml:"address"`
-	ImageFile string `yaml:"image_file"`
-	SansFont  string `yaml:"sans_font"`
-	SerifFont string `yaml:"serif_font"`
+	Name           string `yaml:"name"`
+	BusinessNumber string `yaml:"business_number"`
+	Person         string `yaml:"person"`
+	Address        string `yaml:"address"`
+	ImageFile      string `yaml:"image_file"`
+	SansFont       string `yaml:"sans_font"`
+	SerifFont      string `yaml:"serif_font"`
 }
 
 type BillDetails struct {

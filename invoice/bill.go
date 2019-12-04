@@ -108,12 +108,14 @@ func (b *Bill) makeHeader() func() {
 		b.text(20, 0, "11") // TODO: Make this configurable
 
 		// Biller Name, Address
-		b.pdf.SetXY(8, 40)
+		b.pdf.SetXY(8, 35)
 		b.darkText()
 		b.pdf.SetFont(b.config.Business.SerifFont, "B", 14)
 		b.text(40, 0, b.config.Business.Person)
 
 		b.pdf.SetFont(b.config.Business.SerifFont, "", 10)
+		b.pdf.SetXY(8, 40)
+		b.text(40, 0, b.config.Business.BusinessNumber)
 		b.pdf.SetXY(8, 45)
 		b.text(40, 0, b.config.Business.Address)
 
