@@ -39,11 +39,11 @@ func (b *BillDetails) Strings() []string {
 }
 
 type BillToDetails struct {
-	Email        string
-	Name         string
-	Street       string
-	CityStateZip string `yaml:"city_state_zip"`
-	Country      string
+	Name           string
+	BusinessNumber string `yaml:"business_number"`
+	Street         string
+	CityStateZip   string `yaml:"city_state_zip"`
+	Country        string
 }
 
 type BillableItem struct {
