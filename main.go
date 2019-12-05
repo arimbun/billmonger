@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/jinzhu/now"
-	"github.com/relistan/billmonger/invoice"
+	"github.com/arimbun/billmonger/invoice"
 	"gopkg.in/alecthomas/kingpin.v2"
 	"gopkg.in/relistan/rubberneck.v1"
 )
