@@ -1,5 +1,6 @@
 *.swp
 *.swo
+*.pdf
 vendor/
 billing.yaml
-
+billmonger
