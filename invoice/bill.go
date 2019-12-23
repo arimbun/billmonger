@@ -160,7 +160,7 @@ func (b *Bill) RenderToFile() error {
 	billTime := now.New(now.MustParse(b.config.Bill.Date))
 
 	outFileName := b.config.Business.Person + " " +
-		strings.ToUpper(billTime.EndOfMonth().Format("Jan022006")) + ".pdf"
+		strings.ToUpper(billTime.EndOfMonth().Format("2006Jan02")) + ".pdf"
 
 	err := b.pdf.OutputFileAndClose(outFileName)
 	if err != nil {
