@@ -138,7 +138,7 @@ func (b *Bill) makeFooter() func() {
 		b.darkText()
 		b.text(143, 0, b.config.Business.Name)
 		b.lightText()
-		b.text(40, 0, "Generated: "+time.Now().UTC().Format("2006-01-02 15:04:05"))
+		// b.text(40, 0, "Generated: "+time.Now().UTC().Format("2006-01-02 15:04:05"))
 	}
 }
 
