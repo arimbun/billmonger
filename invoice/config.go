@@ -22,6 +22,7 @@ type BusinessDetails struct {
 	ImageFile      string `yaml:"image_file"`
 	SansFont       string `yaml:"sans_font"`
 	SerifFont      string `yaml:"serif_font"`
+	InvoiceNumber  string `yaml:"invoice_number"`
 }
 
 type BillDetails struct {
